@@ -10,16 +10,22 @@ It is worth noting that using CSI is considered cheating and is strictly prohibi
 
 ### Installation
 
-CSI is currently undergoing development, and while a build for Windows x64 is forthcoming, it is currently possible to clone the repository and run the program on your device. To do so, you will need to download [Node](https://nodejs.org/en) and [Python3.11](https://www.python.org/) beforehand.
+CSI is currently undergoing development, it is currently possible to clone the repository and run the program on your device. To do so, you will need to download [Node](https://nodejs.org/en) and [Python3.11](https://www.python.org/) beforehand.
 
 ```
 git clone https://github.com/Txreq/cs-inspector
 cd cs-inspector
+```
 
-#
+And then you must build the web interface like so
+
+```
 cd client
-npm install
+npm run build
+```
 
-# setup an environment and run
-pip install -r requirements.txt
+Go back to the root directory where `main.py` lives and run it using the Python interpreter
+
+```
+python main.py
 ```
