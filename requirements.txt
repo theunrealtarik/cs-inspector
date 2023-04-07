@@ -1,0 +1,4 @@
+pymem==1.10.0
+flask==2.2.3
+flask-socketio==5.3.3
+flask-cors==3.0.10
