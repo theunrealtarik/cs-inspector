@@ -14,7 +14,9 @@
     "@vechaiui/react": "^0.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "socket.io-client": "^4.6.1",
+    "usehooks-ts": "^2.9.1",
     "vite-tsconfig-paths": "^4.0.8"
   },
   "devDependencies": {

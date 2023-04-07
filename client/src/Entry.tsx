@@ -1,6 +1,6 @@
 import App from "App";
 
-import { Spinner } from "@vechaiui/react";
+import { Code, Spinner } from "@vechaiui/react";
 import { useConnect, useProcess } from "hooks";
 
 export default function Entry() {

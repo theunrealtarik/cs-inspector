@@ -1,20 +1,17 @@
-import { useEffect, useState } from "react";
-import { useConnect } from "./useConnect";
+import { useEffect, useRef } from "react";
 import { Events, socket } from "lib";
 
 export function useProcess() {
-  const connection = useConnect();
-  const [processId, setProcessId] = useState<number | null>(null);
+  const processIdRef = useRef<number | null>(null);
 
   useEffect(() => {
     socket.on(Events.GAME, (pid) => {
-      // setProcessId(processId);
-      setProcessId(pid);
+      processIdRef.current = Number(pid);
     });
   }, []);
 
   return {
-    pid: processId,
-    isGameRunning: Number.isInteger(processId),
+    pid: processIdRef.current,
+    isGameRunning: Number.isInteger(processIdRef.current),
   };
 }
