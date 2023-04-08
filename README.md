@@ -17,10 +17,14 @@ git clone https://github.com/Txreq/cs-inspector
 cd cs-inspector
 ```
 
-And then you must build the web interface like so
+After that, it's necessary to obtain all the required dependencies and construct the web interface in the following manner:
 
 ```
+pip install -r requirements.txt
+
 cd client
+
+npm install
 npm run build
 ```
 
